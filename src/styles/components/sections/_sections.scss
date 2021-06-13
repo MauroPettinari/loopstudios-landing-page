@@ -1,0 +1,31 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url('../../../assets/images/mobile/image-hero.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    .title {
+        height: 35%;
+        width: 100%;
+        padding: 2rem;
+
+        display: flex;
+        justify-content: center;
+
+        border: 2px solid white;
+
+        color: var(--color-white);
+        font-family: 'Josefin Sans', sans-serif;
+        text-transform: uppercase;
+        font-size: 3em;
+
+        word-spacing: 100vw
+    }
+}
