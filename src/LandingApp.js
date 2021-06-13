@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import { Footer } from "./components/layout/Footer";
+import { Navbar } from "./components/layout/Navbar";
+import { Creations } from "./components/sections/creations/Creations";
+import { Hero } from "./components/sections/hero/Hero";
 
 export const LandingApp = () => {
-    return (
-        <div>
-            <h1>Hola mundo</h1>
-        </div>
-    )
-}
+  return (
+    <>
+      <div className="container">
+        <Navbar />
+        <Hero />
+        <Creations />
+        <Footer />
+      </div>
+    </>
+  );
+};
