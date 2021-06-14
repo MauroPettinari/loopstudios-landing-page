@@ -1,11 +1,7 @@
-header {
-  padding-top: 3rem;
+section, header, footer, main {
+  padding: var(--main-padding-sides)
 }
 
-section, header, footer, main {
-  padding-right: var(--main-padding-sides);
-  padding-left: var(--main-padding-sides);
-}
 
 .navbar {
   position: absolute;

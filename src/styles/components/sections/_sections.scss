@@ -1,31 +1,62 @@
+.title {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+
 .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100vw;
+
+  background-image: url("../../../assets/images/mobile/image-hero.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+
+  .main-title {
+    width: 100%;
+    padding: 2em;
+
     display: flex;
     justify-content: center;
-    align-items: center;
 
-    height: 100vh;
-    width: 100vw;
+    border: 2px solid white;
 
-    background-image: url('../../../assets/images/mobile/image-hero.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: left top;
+    h1 {
+      color: var(--color-white);
+      font-family: "Josefin Sans", sans-serif;
+      text-transform: uppercase;
+      font-size: 10vw;
+      font-weight: 100;
 
-    .title {
-        height: 35%;
-        width: 100%;
-        padding: 2rem;
-
-        display: flex;
-        justify-content: center;
-
-        border: 2px solid white;
-
-        color: var(--color-white);
-        font-family: 'Josefin Sans', sans-serif;
-        text-transform: uppercase;
-        font-size: 3em;
-
-        word-spacing: 100vw
+      word-spacing: 100vw;
     }
+  }
+}
+
+.about {
+  text-align: center;
+
+  img {
+    width: 100%;
+  }
+
+  .info {
+    h2 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+
+      font-size: 2em;
+      text-transform: uppercase;
+      color: var(--color-black);
+    }
+
+    p {
+      color: var(--color-dark-gray);
+      padding: 2em;
+    }
+  }
 }
