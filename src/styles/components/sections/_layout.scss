@@ -1,5 +1,9 @@
-section, header, footer, main {
-  padding: var(--main-padding-sides)
+section, footer, main {
+  padding: var(--main-padding-sides);
+}
+
+header {
+  padding: 3rem var(--main-padding-sides);
 }
 
 
