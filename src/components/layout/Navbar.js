@@ -6,7 +6,7 @@ import mobile_menu from "../../assets/images/icon-hamburger.svg";
 export const Navbar = () => {
   return (
     <header className="navbar">
-      <img className="logo" src={logo} alt="logo"></img>
+      <img className="logo" src={logo} alt="loopstudios logo"></img>
       <img
         className="mobile-menu"
         src={mobile_menu}
