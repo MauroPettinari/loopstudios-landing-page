@@ -29,6 +29,7 @@ export const Creations = () => {
       {creationsData.map((creation) => (
         <CreationsCard key={creation.title} {...creation} />
       ))}
+      <a href="#creations" class="button">See all</a>
     </section>
   );
 };

@@ -62,6 +62,10 @@
 }
 
 .creations {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
   .title {
     margin-bottom: 2rem;
   }
@@ -69,6 +73,10 @@
   .creations-card {
     position: relative;
     margin-bottom: 1rem;
+
+    img {
+      width: 100%;
+    }
 
     .title {
       position: absolute;
@@ -87,9 +95,19 @@
       max-width: 160px;
       text-align: left;
     }
+  }
 
-    img {
-      width: 100%;
-    }
+  .button {
+    color: var(--color-black);
+    border: 1px solid var(--color-black);
+
+    margin-top: 1em;
+    padding: 0.5em 2em;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 1em;
   }
 }
