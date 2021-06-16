@@ -1,6 +1,10 @@
 .title {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-black);
 }
 
 .hero {
@@ -38,25 +42,54 @@
 }
 
 .about {
-  text-align: center;
-
   img {
     width: 100%;
   }
 
   .info {
+    text-align: center;
+
     h2 {
       margin-top: 2rem;
       margin-bottom: 1rem;
-
-      font-size: 2em;
-      text-transform: uppercase;
-      color: var(--color-black);
     }
 
     p {
       color: var(--color-dark-gray);
-      padding: 2em;
+      padding: 0em 2em;
+    }
+  }
+}
+
+.creations {
+  .title {
+    margin-bottom: 2rem;
+  }
+
+  .creations-card {
+    position: relative;
+    margin-bottom: 1rem;
+
+    .title {
+      position: absolute;
+      bottom: -15px;
+      left: 15px;
+
+      color: white;
+      text-align: left;
+    }
+
+    .double-line {
+      word-spacing: 100vw;
+    }
+
+    .triple-line {
+      max-width: 160px;
+      text-align: left;
+    }
+
+    img {
+      width: 100%;
     }
   }
 }
