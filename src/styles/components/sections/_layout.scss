@@ -28,20 +28,19 @@ header, .mobile-menu {
   .logo {
     height: 25px;
   }
-  
-  .nav-list {
-    list-style-type: none;
-  
-    .nav-list-item {
-      margin-top: 1rem;
-      a {
-        color: var(--color-white);
-        text-decoration: none;
-      }
+}
+
+.nav-list {
+  list-style-type: none;
+
+  .nav-list-item {
+    margin-top: 1rem;
+    a {
+      color: var(--color-white);
+      text-decoration: none;
     }
   }
 }
-
 
 .mobile-menu {
   position: fixed;
