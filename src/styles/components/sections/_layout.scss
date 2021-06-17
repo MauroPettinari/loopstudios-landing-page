@@ -4,7 +4,7 @@ main {
   padding: var(--main-padding-sides);
 }
 
-header {
+header, .mobile-menu {
   padding: 3rem var(--main-padding-sides);
 }
 
@@ -17,16 +17,64 @@ header {
 
   width: 100%;
 
-  .logo {
-    height: 30px;
-  }
-
-  .mobile-menu {
+  .hamburger-mobile-menu {
     height: 20px;
   }
 
-  nav {
+  .nav-desktop {
     display: none;
+  }
+
+  .logo {
+    height: 25px;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+  
+    .nav-list-item {
+      margin-top: 1rem;
+      a {
+        color: var(--color-white);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+
+  background-color: var(--color-black);
+  z-index: 999;
+
+  .menu-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .close-icon {
+    height: 25px;
+  }
+
+  nav {
+    position: absolute;
+    top: 30vh;
+
+    .nav-list-item {
+      margin-bottom: 2rem;
+      a {
+        opacity: 0.90;
+        text-transform: uppercase;
+        font-family: "Josefin Sans";
+        font-size: 7vw;
+      }
+    }
   }
 }
 
@@ -39,16 +87,8 @@ footer {
     margin: 1rem 0rem;
   }
 
-  .nav-list {
-    list-style-type: none;
-
-    .nav-list-item {
-      margin-top: 1rem;
-      a {
-        color: var(--color-white);
-        text-decoration: none;
-      }
-    }
+  .nav-list-item {
+    margin-top: 1rem;
   }
 
   .socials {

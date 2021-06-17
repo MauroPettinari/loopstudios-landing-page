@@ -1,18 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
+
+import { MobileMenu } from "./MobileMenu";
 
 import logo from "../../assets/images/logo.svg";
 import mobile_menu from "../../assets/images/icon-hamburger.svg";
 
+
 export const Navbar = () => {
+  const [showMenu, setShowMenuState] = useState(false)
+
+  const openMobileMenu = () => {
+    setShowMenuState(!showMenu);
+  }
+
+  const hideMenu = () => {
+    setShowMenuState(!showMenu);
+  }
+
   return (
     <header className="navbar">
       <img className="logo" src={logo} alt="loopstudios logo"></img>
       <img
-        className="mobile-menu"
+        className="hamburger-mobile-menu"
         src={mobile_menu}
         alt="Mobile menu"
+        onClick={ openMobileMenu }
       ></img>
-      <nav>
+      <nav className="nav-desktop">
         <ul className="nav-list">
           <li className="nav-list-item">
             <a href="#about">About</a>
@@ -31,6 +45,9 @@ export const Navbar = () => {
           </li>
         </ul>
       </nav>
+      {
+        showMenu && <MobileMenu hideMenu={hideMenu}/>
+      }
     </header>
   );
 };
