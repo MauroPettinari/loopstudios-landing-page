@@ -7,10 +7,12 @@ import { Hero } from "./components/sections/hero/Hero";
 export const LandingApp = () => {
   return (
     <>
-        <Hero />
+      <Hero />
+      <div className="container">
         <About />
         <Creations />
-        <Footer />
+      </div>
+      <Footer />
     </>
   );
 };

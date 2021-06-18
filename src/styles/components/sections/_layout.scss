@@ -1,11 +1,22 @@
 section,
-footer,
-main {
-  padding: var(--main-padding-sides);
+footer {
+  padding: var(--main-padding-sides) 0;
 }
 
-header, .mobile-menu {
+header,
+main,
+.mobile-menu {
   padding: 3rem var(--main-padding-sides);
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--main-padding-sides);
+  padding-left: var(--main-padding-sides);
+
+  width: 100%;
+  max-width: 100%;
 }
 
 .navbar {
@@ -68,7 +79,7 @@ header, .mobile-menu {
     .nav-list-item {
       margin-bottom: 2rem;
       a {
-        opacity: 0.90;
+        opacity: 0.9;
         text-transform: uppercase;
         font-family: "Josefin Sans";
         font-size: 7vw;
@@ -101,5 +112,23 @@ footer {
   .copyright {
     margin-top: 1rem;
     color: var(--color-dark-gray);
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
   }
 }
